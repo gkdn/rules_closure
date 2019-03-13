@@ -26,8 +26,6 @@ def _impl(ctx):
             ctx.configuration.genfiles_dir.path]
     if ctx.attr.soy_msgs_are_external:
         args += ["--googMsgsAreExternal"]
-    if ctx.attr.should_provide_require_soy_namespaces:
-        args += ["--shouldProvideRequireSoyNamespaces"]
     if ctx.attr.should_generate_soy_msg_defs:
         args += ["--shouldGenerateGoogMsgDefs"]
     if ctx.attr.plugin_modules:

@@ -32,7 +32,7 @@ def _impl(ctx):
     if content and matches != -1:
         fail("matches only makes sense with regexp")
     if not regexp:
-        # Make sure content ends with new file since sed will add one in Mac
+        # Make sure content ends with new file since sed will always add one in Mac
         if content and not content.endswith("\n"):
             content += "\n"
 
